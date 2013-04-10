@@ -1,0 +1,10 @@
+# RecordingBooth files to ignore
+*.zip
+*.suo
+*.doc
+*.docx
+*.dll
+*.pdb
+bin/
+obj/
+*.csproj.user

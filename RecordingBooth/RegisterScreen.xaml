@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="RecordingBooth.RegisterScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"            
+             xmlns:app="clr-namespace:RecordingBooth"
+             xmlns:keybd="clr-namespace:TouchKeyboard;assembly=TouchKeyboard"  
+             xmlns:fps="clr-namespace:FPS.VirtualKeyboard;assembly=FPS.VirtualKeyboard"
+             mc:Ignorable="d"
+             d:DesignHeight="800" d:DesignWidth="900"
+             FontFamily="Arial"
+             FontSize="20"
+             Loaded="RegisterScreen_Loaded"
+             Initialized="RegisterScreen_Initialized" VerticalAlignment="Center">
+
+    <StackPanel Height="833">
+        
+        <!-- Title -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource TitleText}" Height="34" Foreground="White" ForceCursor="True" FontSize="28">ENTER YOUR DETAILS</TextBlock>
+        
+        <!-- User input grid -->
+        <app:UserDataGrid x:Name="UserInputGrid" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Margin="0,20,0,0" Width="600"/>
+
+        <fps:VirtualKeyboard x:Name="virtualKeyboard" Width="800" Height="300" FontSize="12"></fps:VirtualKeyboard>
+        
+        <!-- Touch-screen keyboard -->
+        <keybd:OnScreenKeyboard Visibility="Collapsed" x:Name="InputKeyboard" Grid.Row="3" MinHeight="300" MinWidth="900" Margin="5,15,5,5"/>
+        
+            <!-- Buttons -->
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Image Height="211" Name="image_back" Stretch="Fill" Width="125" Source="/RecordingBooth;component/Images/back.png" MouseDown="BackButton_Click" />
+            <Button Style="{StaticResource RedButtonStyle}" HorizontalAlignment="Center" Name="BackButton" VerticalAlignment="Center" Margin="5" Click="BackButton_Click" Visibility="Hidden">BACK</Button>
+            <Button Style="{StaticResource GreenButtonStyle}" HorizontalAlignment="Center" Name="NextButton" VerticalAlignment="Center" Margin="40,5,5,5" Click="NextButton_Click" Height="160" Width="240" Visibility="Hidden">NEXT</Button>
+            <Image Height="211" Name="image1" Stretch="Fill" Width="125" Source="/RecordingBooth;component/Images/next.png" MouseDown="NextButton_Click" />
+        </StackPanel>
+    </StackPanel>
+    
+</UserControl>

@@ -1,0 +1,514 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- BackgroundGraphic is the image used to paint the background. -->
+    <!-- Currently, all screens use the same background.  Additional  -->
+    <!-- background images can be added here, though changing the     -->
+    <!-- image displayed needs to be done in the View***Screen()      -->
+    <!-- functions in HostWindow.xaml.cs.                             -->
+
+    <!-- Default to a solid color background -->
+    <SolidColorBrush x:Key="BackgroundGraphic">
+        <SolidColorBrush.Color>
+            <Color A="255" R="231" G="238" B="248" />
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
+
+    <!-- Use a color gradient as a background -->
+    <!-- <LinearGradientBrush x:Key="BackgroundGraphic">
+            <GradientStop Color="Yellow" Offset="0.0" />
+            <GradientStop Color="Orange" Offset="0.5" />
+            <GradientStop Color="Red" Offset="1.0" />
+        </LinearGradientBrush> -->
+
+    <!-- Use an image as the background -->
+    <!-- <ImageBrush x:Key="BackgroundGraphic" ImageSource="Resources/GenericBackground.jpg"/> -->
+
+    <!-- Text styles -->
+    <Style BasedOn="{StaticResource {x:Type TextBlock}}" TargetType="TextBlock" x:Key="TitleText">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="32"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+
+    <!-- Template for the green buttons -->
+    <Style x:Key="GreenButtonStyle" TargetType="Button">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}" />
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="MinHeight" Value="160" />
+        <Setter Property="MinWidth" Value="240" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border TextBlock.Foreground="{TemplateBinding Foreground}" x:Name="Border" BorderThickness="2">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="{StaticResource GreenButtonBorderColor}" />
+                        </Border.BorderBrush>
+                        <Border.Background>
+                            <SolidColorBrush Color="{DynamicResource GreenButtonColor}"/>
+                        </Border.Background>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GreenButtonMouseOverColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GreenButtonPressedColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GreenButtonBorderPressedColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GreenButtonDisabledColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GreenButtonBorderDisabledColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                        To="{StaticResource ButtonDisabledForegroundColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            RecognizesAccessKey="True" />
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="true">
+                            <Setter TargetName="Border" Property="BorderBrush">
+                                <Setter.Value>
+                                    <SolidColorBrush  Color="{DynamicResource DefaultBorderBrushDarkColor}" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- Template for the red buttons -->
+    <Style x:Key="RedButtonStyle" TargetType="Button">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}" />
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="MinHeight" Value="160" />
+        <Setter Property="MinWidth" Value="240" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border TextBlock.Foreground="{TemplateBinding Foreground}"
+                            x:Name="Border"
+                            BorderThickness="2">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="{StaticResource RedButtonBorderColor}" />
+                        </Border.BorderBrush>
+                        <Border.Background>
+                            <SolidColorBrush Color="{DynamicResource RedButtonColor}"/>
+                        </Border.Background>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource RedButtonMouseOverColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource RedButtonPressedColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                        To="{StaticResource RedButtonBorderPressedColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource RedButtonDisabledColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                        To="{StaticResource RedButtonBorderDisabledColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                        To="{StaticResource ButtonDisabledForegroundColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            RecognizesAccessKey="True" />
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="true">
+                            <Setter TargetName="Border" Property="BorderBrush">
+                                <Setter.Value>
+                                    <SolidColorBrush  Color="{DynamicResource DefaultBorderBrushDarkColor}" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- Template for the green buttons -->
+    <Style x:Key="DarkRedButtonStyle" TargetType="Button">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}" />
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="MinHeight" Value="160" />
+        <Setter Property="MinWidth" Value="240" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border TextBlock.Foreground="{TemplateBinding Foreground}"
+                x:Name="Border"
+                BorderThickness="2">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="{StaticResource DarkRedButtonBorderColor}" />
+                        </Border.BorderBrush>
+                        <Border.Background>
+                            <SolidColorBrush Color="{DynamicResource DarkRedButtonColor}"/>
+                        </Border.Background>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource DarkRedButtonMouseOverColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource DarkRedButtonPressedColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                        To="{StaticResource DarkRedButtonBorderPressedColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource DarkRedButtonDisabledColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                        To="{StaticResource DarkRedButtonBorderDisabledColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                        To="{StaticResource ButtonDisabledForegroundColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            RecognizesAccessKey="True" />
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="true">
+                            <Setter TargetName="Border" Property="BorderBrush">
+                                <Setter.Value>
+                                    <SolidColorBrush  Color="{DynamicResource DefaultBorderBrushDarkColor}" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- Template for the gold buttons -->
+    <Style x:Key="GoldButtonStyle" TargetType="Button">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}" />
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="MinHeight" Value="160" />
+        <Setter Property="MinWidth" Value="240" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border TextBlock.Foreground="{TemplateBinding Foreground}"
+                            x:Name="Border"
+                            BorderThickness="2"
+                            MinHeight="{TemplateBinding MinHeight}"
+                            MinWidth="{TemplateBinding MinWidth}">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="{StaticResource GoldButtonBorderColor}" />
+                        </Border.BorderBrush>
+                        <Border.Background>
+                            <SolidColorBrush Color="{DynamicResource GoldButtonColor}"/>
+                        </Border.Background>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GoldButtonMouseOverColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GoldButtonPressedColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GoldButtonBorderPressedColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GoldButtonDisabledColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                        To="{StaticResource GoldButtonBorderDisabledColor}"
+                                                        Duration="0:0:0.1" />
+                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                                                        To="{StaticResource ButtonDisabledForegroundColor}"
+                                                        Duration="0:0:0.1" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            RecognizesAccessKey="True" />
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="true">
+                            <Setter TargetName="Border" Property="BorderBrush">
+                                <Setter.Value>
+                                    <SolidColorBrush  Color="{DynamicResource DefaultBorderBrushDarkColor}" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Slider control design -->
+    <BitmapImage x:Key="SliderThumbImage" UriSource="Images/volume-control_bullet.png"></BitmapImage>
+    <Style x:Key="SliderThumbStyle"
+       TargetType="{x:Type Thumb}">
+        <Setter Property="SnapsToDevicePixels"
+          Value="true" />
+        <Setter Property="OverridesDefaultStyle"
+          Value="true" />
+        <Setter Property="Height"
+          Value="40" />
+        <Setter Property="Width"
+          Value="40" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Thumb}">
+                    <Image x:Name="Ellipse" Source="{StaticResource SliderThumbImage}" />
+                    <!--
+                    <Ellipse x:Name="Ellipse" StrokeThickness="2" Stroke="Black" Fill="{StaticResource SliderThumbBrush}"/>
+                    -->
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="HorizontalSlider" TargetType="{x:Type Slider}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TickBar x:Name="TopTick"
+                     SnapsToDevicePixels="True"
+                     Placement="Top"
+                     Height="4"
+                     Visibility="Collapsed">
+                <TickBar.Fill>
+                    <SolidColorBrush Color="{DynamicResource GlyphColor}" />
+                </TickBar.Fill>
+            </TickBar>
+            <Rectangle x:Name="TrackBackground" Height="4" Grid.Row="1" RadiusX="2" RadiusY="2"  Fill="Black"/>
+            <Track Grid.Row="1" x:Name="PART_Track">
+                <Track.Thumb>
+                    <Thumb Style="{StaticResource SliderThumbStyle}" />
+                </Track.Thumb>
+            </Track>
+            <TickBar x:Name="BottomTick"
+                     SnapsToDevicePixels="True"
+                     Grid.Row="2"
+                     Fill="{TemplateBinding Foreground}"
+                     Placement="Bottom"
+                     Height="4"
+                     Visibility="Collapsed" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="TickPlacement" Value="TopLeft">
+                <Setter TargetName="TopTick" Property="Visibility" Value="Visible" />
+            </Trigger>
+            <Trigger Property="TickPlacement" Value="BottomRight">
+                <Setter TargetName="BottomTick" Property="Visibility" Value="Visible" />
+            </Trigger>
+            <Trigger Property="TickPlacement" Value="Both">
+                <Setter TargetName="TopTick" Property="Visibility" Value="Visible" />
+                <Setter TargetName="BottomTick" Property="Visibility" Value="Visible" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="VolumeControlTemplate" TargetType="{x:Type Slider}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" MinWidth="{TemplateBinding MinWidth}" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TickBar x:Name="TopTick"
+                     SnapsToDevicePixels="True"
+                     Placement="Left"
+                     Width="4"
+                     Visibility="Collapsed">
+                <TickBar.Fill>
+                    <SolidColorBrush Color="{DynamicResource GlyphColor}" />
+                </TickBar.Fill>
+            </TickBar>
+
+            <Rectangle x:Name="TrackBackground" Margin="0" Width="4" Grid.Column="1" Fill="Black"/>
+
+            <Track Grid.Column="1" x:Name="PART_Track">
+                <Track.Thumb>
+                    <Thumb Style="{StaticResource SliderThumbStyle}" />
+                </Track.Thumb>
+            </Track>
+
+            <TickBar x:Name="BottomTick"
+                     SnapsToDevicePixels="True"
+                     Grid.Column="2"
+                     Fill="{TemplateBinding Foreground}"
+                     Placement="Right"
+                     Width="4"
+                     Visibility="Collapsed" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="TickPlacement" Value="TopLeft">
+                <Setter TargetName="TopTick" Property="Visibility" Value="Visible" />
+            </Trigger>
+            <Trigger Property="TickPlacement" Value="BottomRight">
+                <Setter TargetName="BottomTick" Property="Visibility" Value="Visible" />
+            </Trigger>
+            <Trigger Property="TickPlacement" Value="Both">
+                <Setter TargetName="TopTick" Property="Visibility" Value="Visible" />
+                <Setter TargetName="BottomTick" Property="Visibility" Value="Visible" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+
+    <!-- Style for the recording level indicator -->
+    <Style x:Key="LevelIndicator" TargetType="ProgressBar">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ProgressBar">
+                    <Grid MinHeight="14" MinWidth="200">
+                        <Rectangle Name="PART_Track" Stroke="#888888" StrokeThickness="1">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                    <GradientStop Offset="0" Color="#FF00FF00"/>
+                                    <GradientStop Offset="0.85" Color="#FFFFFF00"/>
+                                    <GradientStop Offset="1" Color="#FFFF0000"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <DockPanel Margin="1">
+                            <Rectangle Name="PART_Indicator">
+                            </Rectangle>
+                            <Rectangle Name="Mask" MinWidth="{TemplateBinding Width}" Fill="#C0C0C0"/>
+                        </DockPanel>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

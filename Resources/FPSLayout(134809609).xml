@@ -1,0 +1,694 @@
+<?xml version="1.0"?>
+<KeyboardLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Keys>
+    <Key xsi:type="RegularKey">
+      <Left>10</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>223</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>55</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>49</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>100</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>50</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>145</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>51</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>190</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>52</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>235</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>53</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>280</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>54</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>325</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>55</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>370</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>56</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>415</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>57</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>460</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>48</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>505</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>189</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>550</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>187</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="SpecialKey">
+      <Content xsi:type="xsd:string">Back</Content>
+      <Left>595</Left>
+      <Top>9</Top>
+      <Width>110</Width>
+      <Height>40</Height>
+      <VirtualKey>8</VirtualKey>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>10</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>81</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>55</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>87</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>100</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>69</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>145</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>82</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>190</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>84</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>235</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>89</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>280</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>85</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>325</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>73</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>370</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>79</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>415</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>80</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>460</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>219</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>505</Left>
+      <Top>54</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>221</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="SpecialKey">
+      <Content xsi:type="xsd:string">Enter</Content>
+      <Left>596</Left>
+      <Top>99</Top>
+      <Width>109</Width>
+      <Height>130</Height>
+      <VirtualKey>13</VirtualKey>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>10</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>222</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>55</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>65</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>100</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>83</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>145</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>68</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>190</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>70</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>235</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>71</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>280</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>72</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>325</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>74</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>370</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>75</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>415</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>76</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>460</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>186</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>505</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>192</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="SpecialKey">
+      <Content xsi:type="xsd:string">Shift</Content>
+      <Left>10</Left>
+      <Top>189</Top>
+      <Width>85</Width>
+      <Height>40</Height>
+      <VirtualKey>16</VirtualKey>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>10</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>220</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>55</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>90</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>100</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>88</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>145</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>67</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>190</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>86</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>235</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>66</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>280</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>78</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>325</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>77</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>370</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>188</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>415</Left>
+      <Top>144</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>false</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>190</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="SpecialKey">
+      <Content xsi:type="xsd:string">Space</Content>
+      <Left>101</Left>
+      <Top>189</Top>
+      <Width>398</Width>
+      <Height>40</Height>
+      <VirtualKey>32</VirtualKey>
+    </Key>
+    <Key xsi:type="SpecialKey">
+      <Content xsi:type="xsd:string">Delete</Content>
+      <Left>596</Left>
+      <Top>53</Top>
+      <Width>109</Width>
+      <Height>40</Height>
+      <VirtualKey>46</VirtualKey>
+    </Key>
+    <Key xsi:type="ExtendedKey">
+      <Content xsi:type="xsd:string">www.</Content>
+      <Left>550</Left>
+      <Top>99</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <Keys>
+        <Key xsi:type="RegularKey">
+          <Left>0</Left>
+          <Top>0</Top>
+          <Width>40</Width>
+          <Height>40</Height>
+          <AltLock>false</AltLock>
+          <ShiftLock>false</ShiftLock>
+          <AltGrLock>false</AltGrLock>
+          <ControlLock>false</ControlLock>
+          <VirtualKey>87</VirtualKey>
+          <Repetition>3</Repetition>
+        </Key>
+        <Key xsi:type="RegularKey">
+          <Left>0</Left>
+          <Top>0</Top>
+          <Width>40</Width>
+          <Height>40</Height>
+          <AltLock>false</AltLock>
+          <ShiftLock>false</ShiftLock>
+          <AltGrLock>false</AltGrLock>
+          <ControlLock>false</ControlLock>
+          <VirtualKey>190</VirtualKey>
+          <Repetition>1</Repetition>
+        </Key>
+      </Keys>
+    </Key>
+    <Key xsi:type="ExtendedKey">
+      <Content xsi:type="xsd:string">Clear</Content>
+      <Left>505</Left>
+      <Top>144</Top>
+      <Width>85</Width>
+      <Height>84</Height>
+      <Keys>
+        <Key xsi:type="RegularKey">
+          <Left>0</Left>
+          <Top>0</Top>
+          <Width>40</Width>
+          <Height>40</Height>
+          <AltLock>false</AltLock>
+          <ShiftLock>false</ShiftLock>
+          <AltGrLock>false</AltGrLock>
+          <ControlLock>true</ControlLock>
+          <VirtualKey>65</VirtualKey>
+          <Repetition>1</Repetition>
+        </Key>
+        <Key xsi:type="SpecialKey">
+          <Content xsi:type="xsd:string">Delete</Content>
+          <Left>0</Left>
+          <Top>0</Top>
+          <Width>40</Width>
+          <Height>40</Height>
+          <VirtualKey>46</VirtualKey>
+        </Key>
+      </Keys>
+    </Key>
+    <Key xsi:type="RegularKey">
+      <Left>460</Left>
+      <Top>143.52000000000004</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <AltLock>false</AltLock>
+      <ShiftLock>true</ShiftLock>
+      <AltGrLock>false</AltGrLock>
+      <ControlLock>false</ControlLock>
+      <VirtualKey>191</VirtualKey>
+      <Repetition>1</Repetition>
+    </Key>
+    <Key xsi:type="SpecialKey">
+      <Content xsi:type="xsd:string">Lang</Content>
+      <Left>549</Left>
+      <Top>52.861666666666679</Top>
+      <Width>44</Width>
+      <Height>41</Height>
+      <VirtualKey>0</VirtualKey>
+    </Key>
+  </Keys>
+  <Width>720</Width>
+  <Height>245</Height>
+  <KeyboardLayoutId>134809609</KeyboardLayoutId>
+</KeyboardLayout>

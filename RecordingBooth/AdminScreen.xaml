@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="RecordingBooth.AdminScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:app="clr-namespace:RecordingBooth"
+             xmlns:val="clr-namespace:RecordingBooth.Validation"
+             mc:Ignorable="d"
+             d:DesignHeight="600"
+             d:DesignWidth="900"
+             FontFamily="Arial"
+             FontSize="20"
+             Initialized="AdminScreen_Initialized"
+             Loaded="AdminScreen_Loaded" VerticalAlignment="Center">
+
+    <StackPanel>
+        
+        <!-- Page Title -->
+        <TextBlock Style="{StaticResource TitleText}" TextAlignment="Center" Foreground="White">ADMINISTRATION</TextBlock>
+
+        <StackPanel Orientation="Horizontal" Margin="0,40,0,0">
+
+            <!-- Volume control -->
+            <StackPanel Orientation="Vertical" Margin="0,0,40,0">
+                <TextBlock FontSize="28" HorizontalAlignment="Center">RECORDING<LineBreak/>LEVEL</TextBlock>
+                <Slider Name="VolumeControl"
+                        Orientation="Vertical"
+                        Template="{StaticResource VolumeControlTemplate}"
+                        Height="300"
+                        HorizontalAlignment="Center"
+                        Minimum="0.0"
+                        Maximum="1.0"
+                        Value="{Binding RecordingLevel}"></Slider>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+
+                <!-- Data Grid -->
+                <Grid Grid.Row="1" Grid.Column="0" Width="640">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+            
+                    <!-- Organization name editing -->
+                    <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Background="{StaticResource EntryLabelBackgroundBrush}" Margin="0,10,0,0">
+                        <TextBlock TextAlignment="Center" Margin="5,2,5,2">ORGANIZATION NAME</TextBlock>
+                    </Border>
+                    <TextBox Grid.Row="0"
+                             Grid.Column="1"
+                             Name="OrganizationTextBox"
+                             Margin="0,10,0,0"
+                             Text="{Binding Path=OrganizationName, UpdateSourceTrigger=PropertyChanged}"/>
+            
+                    <!-- Max. recording time editing -->
+                    <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Background="{StaticResource EntryLabelBackgroundBrush}" Margin="0,10,0,0">
+                        <TextBlock TextAlignment="Center" Margin="5,2,5,2">MAX RECORDING TIME (M:SS)</TextBlock>
+                    </Border>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="RecordingTimeTextBox" Margin="0,10,0,0">
+                        <TextBox.Text>
+                            <Binding Path="MaxRecordingTime" NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <val:MaxRecordingTimeRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+
+                    <!-- Organization name editing -->
+                    <Border Grid.Row="2" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Background="{StaticResource EntryLabelBackgroundBrush}" Margin="0,10,0,0">
+                        <TextBlock TextAlignment="Center" Margin="5,2,5,2">RECORDING FILE PATH</TextBlock>
+                    </Border>
+                    <TextBox Grid.Row="2"
+                             Grid.Column="1"
+                             Name="LibraryPathTextBox"
+                             Margin="0,10,0,0"
+                             Text="{Binding Path=LibraryPath, UpdateSourceTrigger=PropertyChanged}"/>
+
+                </Grid>
+        
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" Margin="0,40,0,0" HorizontalAlignment="Center">
+                    <Image Height="247" HorizontalAlignment="Left" Margin="7,17,0,0" Name="imgUpdate" Stretch="Fill" VerticalAlignment="Top"  Source="/RecordingBooth;component/Images/update_b.png" Grid.RowSpan="2"  MouseDown="updateButton_Click"  />
+                    <Image Height="247" HorizontalAlignment="Left" Margin="7,17,0,0" Name="imgUserList" Stretch="Fill" VerticalAlignment="Top"  Source="/RecordingBooth;component/Images/view-users_b.png" Grid.RowSpan="2"  MouseDown="viewUsersButton_Click"  />
+                    <Image Height="247" HorizontalAlignment="Left" Margin="7,17,0,0" Name="imgExport" Stretch="Fill" VerticalAlignment="Top"  Source="/RecordingBooth;component/Images/export-data_b.png" Grid.RowSpan="2"  MouseDown="ExportButton_Click"  />
+                    <Image Height="247" HorizontalAlignment="Left" Margin="7,17,0,0" Name="imgClearDB" Stretch="Fill" VerticalAlignment="Top"  Source="/RecordingBooth;component/Images/clear-records_b.png" Grid.RowSpan="2"  MouseDown="ClearUsersButton_Click"  />
+                    
+                    <Button Visibility="Collapsed"  Name="updateButton" Click="updateButton_Click" Style="{StaticResource GreenButtonStyle}" >UPDATE</Button>
+                    <Button Visibility="Collapsed" Name="viewUsersButton" Click="viewUsersButton_Click" Margin="40,0,0,0" Style="{StaticResource GreenButtonStyle}">
+                        <TextBlock>VIEW<LineBreak/>USERS</TextBlock>
+                    </Button>
+                    <Button Visibility="Collapsed" Name="ExportButton" Click="ExportButton_Click" Margin="40,0,0,0" Style="{StaticResource GreenButtonStyle}">
+                        <TextBlock>EXPORT<LineBreak/>DATA</TextBlock>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,40,0,0" HorizontalAlignment="Center">
+                    <Image Height="247" HorizontalAlignment="Left" Margin="7,17,0,0" Name="imgBack" Stretch="Fill" VerticalAlignment="Top"  Source="/RecordingBooth;component/Images/back-to-recoding-booth_b.png" Grid.RowSpan="2"  MouseDown="backButton_Click"  />
+                    <Image Height="247" HorizontalAlignment="Left" Margin="7,17,0,0" Name="imgExit" Stretch="Fill" VerticalAlignment="Top"  Source="/RecordingBooth;component/Images/exit_b.png" Grid.RowSpan="2"  MouseDown="exitButton_Click"  />
+                    
+                    <Button Visibility="Collapsed" Name="clearUserButton" Click="ClearUsersButton_Click" Style="{StaticResource RedButtonStyle}">Clear DB</Button>
+                    <Button Visibility="Collapsed" Name="backButton" Margin="40,0,0,0" Click="backButton_Click" Style="{StaticResource RedButtonStyle}" Height="160" Width="240">BACK</Button>
+                    <Button Visibility="Collapsed" Name="exitButton" Click="exitButton_Click" Margin="40,0,0,0" Style="{StaticResource DarkRedButtonStyle}">EXIT</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

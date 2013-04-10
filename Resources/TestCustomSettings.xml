@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomSettings>
+  
+  <!-- Color format is #AARRGGBB, where:     -->
+  <!-- AA:  alpha (transparency), 00 to FF   -->
+  <!-- RR:  red, 00 to FF                    -->
+  <!-- GG:  green, 00 to FF                  -->
+  <!-- BB:  blue, 00 to FF                   -->
+
+  <!-- Welcome/Start screen -->
+  <WelcomeStartButtonText>BEGIN</WelcomeStartButtonText>
+  <WelcomeStartButtonColor>#FF00DA00</WelcomeStartButtonColor>
+  <WelcomeBackgroundImage>Resources\WelcomeBackgroundImage.jpg</WelcomeBackgroundImage>
+  
+  <!-- Register screen -->
+  <RegisterNextButtonText>REGISTER</RegisterNextButtonText>
+  <RegisterNextButtonColor>#FF0000DD</RegisterNextButtonColor>
+  <RegisterBackButtonText>AVERT</RegisterBackButtonText>
+  <RegisterBackButtonColor>#FFD00000</RegisterBackButtonColor>
+  <RegisterBackgroundImage>Resources\RegisterBackgroundImage.jpg</RegisterBackgroundImage>
+  
+  <!-- User Agreement screen -->
+  <AgreementAgreeButtonText>DA</AgreementAgreeButtonText>
+  <AgreementAgreeButtonColor>#FF007F00</AgreementAgreeButtonColor>
+  <AgreementBackButtonText>NYET</AgreementBackButtonText>
+  <AgreementBackButtonColor>#FF7F0000</AgreementBackButtonColor>
+  <AgreementBackgroundImage>Resources\AgreementBackgroundImage.jpg</AgreementBackgroundImage>
+  
+  <!-- Recording screen -->
+  <RecordingStartButtonText>COMMENCE</RecordingStartButtonText>
+  <RecordingStartButtonColor>#FF3FBF3F</RecordingStartButtonColor>
+  <RecordingStopButtonText>ALTO</RecordingStopButtonText>
+  <RecordingStopButtonColor>#FFBF3F3F</RecordingStopButtonColor>
+  <RecordingBackButtonText>RETURN</RecordingBackButtonText>
+  <RecordingBackButtonColor>#FF7F7F7F</RecordingBackButtonColor>
+  <RecordingBackgroundImage>Resources\RecordingBackgroundImage.jpg</RecordingBackgroundImage>
+  
+  <!-- Playback/Review screen -->
+  <PlaybackPlayButtonText>REVIEW</PlaybackPlayButtonText>
+  <PlaybackPlayButtonColor>#FF7FDF7F</PlaybackPlayButtonColor>
+  <PlaybackReRecordButtonText>REDO</PlaybackReRecordButtonText>
+  <PlaybackReRecordButtonColor>#FF3F3F3F</PlaybackReRecordButtonColor>
+  <PlaybackNewRecordingButtonText>AGAIN</PlaybackNewRecordingButtonText>
+  <PlaybackNewRecordingButtonColor>#FF7F7FFF</PlaybackNewRecordingButtonColor>
+  <PlaybackFinishButtonText>COMPLETE</PlaybackFinishButtonText>
+  <PlaybackFinishButtonColor>#FFBFFFBF</PlaybackFinishButtonColor>
+  <PlaybackBackgroundImage>Resources\PlaybackBackgroundImage.jpg</PlaybackBackgroundImage>
+  
+  <!-- Admin screen -->
+  <AdminUpdateButtonText>SSAVE</AdminUpdateButtonText>
+  <AdminUpdateButtonColor>#FFC0C000</AdminUpdateButtonColor>
+  <AdminViewUsersButtonText>USERS</AdminViewUsersButtonText>
+  <AdminViewUsersButtonColor>#FF00C0C0</AdminViewUsersButtonColor>
+  <AdminExportButtonText>SHIP</AdminExportButtonText>
+  <AdminExportButtonColor>#FFC000C0</AdminExportButtonColor>
+  <AdminBackButtonText>RETOIN</AdminBackButtonText>
+  <AdminBackButtonColor>#FF00FF00</AdminBackButtonColor>
+  <AdminExitButtonText>EGRESS</AdminExitButtonText>
+  <AdminExitButtonColor>#FFFF0000</AdminExitButtonColor>
+  <AdminPopupBackgroundColor>#FFC0C0C0</AdminPopupBackgroundColor>
+  <AdminBackgroundImage>Resources\AdminBackgroundImage.jpg</AdminBackgroundImage>
+
+  <!-- User List screen -->
+  <UserListBackButtonText>HUNDO</UserListBackButtonText>
+  <UserListBackButtonColor>#FF8080FF</UserListBackButtonColor>
+
+  <!-- Recordings List screen -->
+  <RecordingsListBackButtonText>BLATT</RecordingsListBackButtonText>
+  <RecordingsListBackButtonColor>#FFFF8080</RecordingsListBackButtonColor>
+
+</CustomSettings>

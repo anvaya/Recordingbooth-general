@@ -1,0 +1,80 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Input field colors -->
+    <Color x:Key="EntryLabelBackgroundColor">#FFC9D6E6</Color>
+    <SolidColorBrush x:Key="EntryLabelBackgroundBrush" Color="{StaticResource EntryLabelBackgroundColor}"/>
+    
+    <!-- Slider colors -->
+    <Color x:Key="SliderThumbColor">#FF3591A8</Color>
+    <SolidColorBrush x:Key="SliderThumbBrush"  Color="{StaticResource SliderThumbColor}"/>
+
+    <!-- Common button colors -->
+    <Color x:Key="ButtonFocusColor">#60000000</Color>
+    <Color x:Key="ButtonDisabledForegroundColor">#FFA9A9A9</Color>
+
+    <!-- Green button colors -->
+    <Color x:Key="GreenButtonColor">#FFCADAA9</Color>
+    <Color x:Key="GreenButtonMouseOverColor">#FFE7EED7</Color>
+    <Color x:Key="GreenButtonPressedColor">#FFBDB76B</Color>
+    <Color x:Key="GreenButtonDisabledColor">#FFF4F4D8</Color>
+
+    <Color x:Key="GreenButtonBorderColor">#FF000000</Color>
+    <Color x:Key="GreenButtonBorderPressedColor">#FF606060</Color>
+    <Color x:Key="GreenButtonBorderDisabledColor">#FFA9A9A9</Color>
+    <Color x:Key="GreenButtonBorderDefaultColor">#FF808040</Color>
+
+    <!-- Red button colors -->
+    <Color x:Key="RedButtonColor">#FFE1B9B0</Color>
+    <Color x:Key="RedButtonMouseOverColor">#FFEBD0CB</Color>
+    <Color x:Key="RedButtonPressedColor">#FFBB604D</Color>
+    <Color x:Key="RedButtonDisabledColor">#FFF4E8E8</Color>
+
+    <Color x:Key="RedButtonBorderColor">#FF000000</Color>
+    <Color x:Key="RedButtonBorderPressedColor">#FF606060</Color>
+    <Color x:Key="RedButtonBorderDisabledColor">#FFA9A9A9</Color>
+    <Color x:Key="RedButtonBorderDefaultColor">#FF800000</Color>
+
+    <!-- Dark red button colors -->
+    <Color x:Key="DarkRedButtonColor">#FFFE0000</Color>
+    <Color x:Key="DarkRedButtonMouseOverColor">#FFFE7F7F</Color>
+    <Color x:Key="DarkRedButtonPressedColor">#FFC07F7F</Color>
+    <Color x:Key="DarkRedButtonDisabledColor">#FFFFD0D0</Color>
+
+    <Color x:Key="DarkRedButtonBorderColor">#FF000000</Color>
+    <Color x:Key="DarkRedButtonBorderPressedColor">#FF606060</Color>
+    <Color x:Key="DarkRedButtonBorderDisabledColor">#FFA9A9A9</Color>
+    <Color x:Key="DarkRedButtonBorderDefaultColor">#FF800000</Color>
+
+    <!-- Gold button colors -->
+    <Color x:Key="GoldButtonColor">#FFFFC000</Color>
+    <Color x:Key="GoldButtonMouseOverColor">#FFFFE080</Color>
+    <Color x:Key="GoldButtonPressedColor">#FFC06000</Color>
+    <Color x:Key="GoldButtonDisabledColor">#FFF0E0C0</Color>
+
+    <Color x:Key="GoldButtonBorderColor">#FF000000</Color>
+    <Color x:Key="GoldButtonBorderPressedColor">#FF606060</Color>
+    <Color x:Key="GoldButtonBorderDisabledColor">#FFA9A9A9</Color>
+    <Color x:Key="GoldButtonBorderDefaultColor">#FF806000</Color>
+
+    <!-- Common brushes -->
+    <SolidColorBrush x:Key="ButtonFocusBrush" Color="{StaticResource ButtonFocusColor}"/>
+    
+    <!-- Button focus template -->
+    <Style x:Key="ButtonFocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border>
+                        <Rectangle Margin="2"
+                     StrokeThickness="1"
+                     Stroke="{StaticResource ButtonFocusBrush}"
+                     StrokeDashArray="1 2" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

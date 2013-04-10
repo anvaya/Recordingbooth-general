@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="RecordingBooth.UserRecordingsScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:app="clr-namespace:RecordingBooth"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="600"
+             FontFamily="Arial"
+             FontSize="20"
+             Initialized="UserRecordingsScreen_Initialized"
+             Loaded="UserRecordingsScreen_Loaded" VerticalAlignment="Center">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource TitleText}" Foreground="White">USER AND RECORDINGS</TextBlock>
+
+        <!-- User data grid -->
+        <app:UserDataGrid Grid.Row="1" Grid.Column="0" x:Name="UserInformationGrid" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="0,20,0,0" Width="600"/>
+
+        <!-- List of recordings for this user -->
+        <DataGrid Name="RecordingList"
+                  Grid.Row="2"
+                  Grid.Column="0"
+                  ItemsSource="{Binding}"
+                  AutoGenerateColumns="False"
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow"
+                  CanUserReorderColumns="True"
+                  CanUserResizeColumns="True"
+                  CanUserSortColumns="True"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  Width="600"
+                  Margin="0,20,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date" Binding="{Binding RecordingTimestamp}" Width="3*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="File" Binding="{Binding FileName}" Width="5*" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Buttons -->
+        <Button Grid.Row="3" Grid.Column="0" Style="{StaticResource RedButtonStyle}" HorizontalAlignment="Center" Name="BackButton" VerticalAlignment="Center" Margin="5" Click="BackButton_Click" Visibility="Collapsed">BACK</Button>
+        <Image Grid.Row="3" Height="185" HorizontalAlignment="Left" Margin="231,5,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="129" Source="/RecordingBooth;component/Images/back.png" MouseDown="BackButton_Click" />
+    </Grid>
+
+</UserControl>

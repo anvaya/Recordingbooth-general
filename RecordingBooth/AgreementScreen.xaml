@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="RecordingBooth.AgreementScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             d:DesignHeight="800"
+             d:DesignWidth="900"
+             Initialized="AgreementScreen_Initialized" VerticalAlignment="Center">
+    <Grid Height="521">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="31"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Style="{StaticResource TitleText}" Foreground="White">APPROVAL</TextBlock>
+        <FlowDocumentScrollViewer Name="UserAgreementViewer"
+                                  Margin="0,40,0,0"
+                                  VerticalScrollBarVisibility="Auto" Foreground="White">
+            <FlowDocument FontFamily="Verdana">
+
+                <Paragraph>
+                    <Run>I,</Run>
+                    <Run Tag="userName">(userName)</Run>
+                    <Run>agree that:
+                    </Run>
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph>
+                            <Run>I waive all rights in and to the copyright, and all other intellectual
+                                property rights, in the voice and/or video recording(s) and that all of
+                                the foregoing rights are vested in</Run>
+                            <Run Tag="organzationName">(organzationName)</Run>
+                            <Run>upon their creation;</Run>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph>and</Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph>
+                            <Run>I consent that the recording(s) may be used, edited, or amended in any
+                                way at the discretion of</Run>
+                            <Run Tag="organzationName">(organzationName)</Run>
+                            <Run>.</Run>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="2" Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Image Height="211" Name="image_back" Stretch="Fill" Width="125" Source="/RecordingBooth;component/Images/back.png" MouseDown="BackButton_Click" />
+            <Button Visibility="Hidden" Style="{StaticResource RedButtonStyle}" HorizontalAlignment="Center" Name="BackButton" VerticalAlignment="Center" Click="BackButton_Click" Margin="20,0,0,0">BACK</Button>
+            <Image Height="211" Name="image_agree" Stretch="Fill" Width="125" Source="/RecordingBooth;component/Images/agree.png" MouseDown="AgreeButton_Click" />
+            <Button Visibility="Collapsed" Style="{StaticResource GreenButtonStyle}" HorizontalAlignment="Center" Name="AgreeButton" VerticalAlignment="Center" Click="AgreeButton_Click" Margin="20,0,0,0">AGREE</Button>
+        </StackPanel>
+    </Grid>
+
+</UserControl>

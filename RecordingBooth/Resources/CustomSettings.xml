@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomSettings>
+  
+  <!-- Color format is #AARRGGBB, where:     -->
+  <!-- AA:  alpha (transparency), 00 to FF   -->
+  <!-- RR:  red, 00 to FF                    -->
+  <!-- GG:  green, 00 to FF                  -->
+  <!-- BB:  blue, 00 to FF                   -->
+  
+  <!-- For a multiline button label, insert "\n" (just like the common escape      -->
+  <!-- sequence for a newline character).  For example, to get a label like:       -->
+  <!--      START                                                                  -->
+  <!--    RECORDING                                                                -->
+  <!-- the text in this file would be:                                             -->
+  <!--     <tag>START\nRECORDING                                                   -->
+  <!-- The escape is case-sensitive;  only a lower-case n will work.               -->
+
+  <!-- Welcome/Start screen -->
+  <WelcomeStartButtonText>START</WelcomeStartButtonText>
+  <WelcomeStartButtonColor>#FFCADAA9</WelcomeStartButtonColor>
+  <WelcomeBackgroundImage>Resources\background-1.jpg</WelcomeBackgroundImage>
+  
+  <!-- Register screen -->
+  <RegisterNextButtonText>NEXT</RegisterNextButtonText>
+  <RegisterNextButtonColor>#FFCADAA9</RegisterNextButtonColor>
+  <RegisterBackButtonText>BACK</RegisterBackButtonText>
+  <RegisterBackButtonColor>#FFE1B9B0</RegisterBackButtonColor>
+  <RegisterBackgroundImage>Resources\background-1.jpg</RegisterBackgroundImage>
+  
+  <!-- User Agreement screen -->
+  <AgreementAgreeButtonText>AGREE</AgreementAgreeButtonText>
+  <AgreementAgreeButtonColor>#FFCADAA9</AgreementAgreeButtonColor>
+  <AgreementBackButtonText>BACK</AgreementBackButtonText>
+  <AgreementBackButtonColor>#FFE1B9B0</AgreementBackButtonColor>
+  <AgreementBackgroundImage>Resources\background-1.jpg</AgreementBackgroundImage>
+  
+  <!-- Recording screen -->
+  <RecordingStartButtonText>START\nRECORDING</RecordingStartButtonText>
+  <RecordingStartButtonColor>#FFFE0000</RecordingStartButtonColor>
+  <RecordingStopButtonText>STOP\nRECORDING</RecordingStopButtonText>
+  <RecordingStopButtonColor>#FFCADAA9</RecordingStopButtonColor>
+  <RecordingBackButtonText>BACK</RecordingBackButtonText>
+  <RecordingBackButtonColor>#FFE1B9B0</RecordingBackButtonColor>
+  <RecordingBackgroundImage>Resources\background-2.jpg</RecordingBackgroundImage>
+  
+  <!-- Playback/Review screen -->
+  <PlaybackPlayButtonText>PLAYBACK\nYOUR LAST\nRECORDING</PlaybackPlayButtonText>
+  <PlaybackPlayButtonColor>#FFE1B9B0</PlaybackPlayButtonColor>
+  <PlaybackReRecordButtonText>RE-RECORD\nYOUR LAST\nRECORDING</PlaybackReRecordButtonText>
+  <PlaybackReRecordButtonColor>#FFFFC000</PlaybackReRecordButtonColor>
+  <PlaybackNewRecordingButtonText>ANOTHER\nRECORDING?</PlaybackNewRecordingButtonText>
+  <PlaybackNewRecordingButtonColor>#FFFFC000</PlaybackNewRecordingButtonColor>
+  <PlaybackFinishButtonText>FINISH</PlaybackFinishButtonText>
+  <PlaybackFinishButtonColor>#FFCADAA9</PlaybackFinishButtonColor>
+  <PlaybackBackgroundImage>Resources\background.jpg</PlaybackBackgroundImage>
+  
+  <!-- Admin screen -->
+  <AdminUpdateButtonText>UPDATE</AdminUpdateButtonText>
+  <AdminUpdateButtonColor>#FFCADAA9</AdminUpdateButtonColor>
+  <AdminViewUsersButtonText>VIEW\nUSERS</AdminViewUsersButtonText>
+  <AdminViewUsersButtonColor>#FFCADAA9</AdminViewUsersButtonColor>
+  <AdminExportButtonText>EXPORT\nDATA</AdminExportButtonText>
+  <AdminExportButtonColor>#FFCADAA9</AdminExportButtonColor>
+  <AdminBackButtonText>BACK</AdminBackButtonText>
+  <AdminBackButtonColor>#FFE1B9B0</AdminBackButtonColor>
+  <AdminExitButtonText>EXIT</AdminExitButtonText>
+  <AdminExitButtonColor>#FFFE0000</AdminExitButtonColor>
+  <AdminPopupBackgroundColor>#FFC0C0C0</AdminPopupBackgroundColor>
+  <AdminBackgroundImage>Resources\AdminBackgroundImage.jpg</AdminBackgroundImage>
+
+  <!-- User List screen -->
+  <UserListBackButtonText>BACK</UserListBackButtonText>
+  <UserListBackButtonColor>#FFE1B9B0</UserListBackButtonColor>
+
+  <!-- Recordings List screen -->
+  <RecordingsListBackButtonText>BACK</RecordingsListBackButtonText>
+  <RecordingsListBackButtonColor>#FFE1B9B0</RecordingsListBackButtonColor>
+
+</CustomSettings>

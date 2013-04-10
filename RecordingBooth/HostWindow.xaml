@@ -1,0 +1,54 @@
+﻿<Window x:Class="RecordingBooth.HostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:app="clr-namespace:RecordingBooth"
+        Title="Recording Booth"
+        WindowStyle="None"
+        WindowState="Maximized"
+        Topmost="True"
+        MouseLeftButtonUp="Window_MouseLeftButtonUp">
+    <!-- <Window x:Class="RecordingBooth.HostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:app="clr-namespace:RecordingBooth"
+        Title="Recording Booth"
+        MouseLeftButtonUp="Window_MouseLeftButtonUp"> -->
+    <Grid Name="ScreenLayout" Background="{StaticResource BackgroundGraphic}" ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.Row="1" Grid.Column="1" Name="ContentPanel" Background="Transparent" BorderThickness="0">
+            <TabItem Name="StartTab" Visibility="Collapsed">
+                <app:StartScreen x:Name="StartScreenInstance"/>
+            </TabItem>
+            <TabItem Name="AdminTab" Visibility="Collapsed">
+                <app:AdminScreen x:Name="AdminScreenInstance"/>
+            </TabItem>
+            <TabItem Name="RegisterTab" Visibility="Collapsed">
+                <app:RegisterScreen x:Name="RegisterScreenInstance"/>
+            </TabItem>
+            <TabItem Name="AgreementTab" Visibility="Collapsed">
+                <app:AgreementScreen x:Name="AgreementScreenInstance"/>
+            </TabItem>
+            <TabItem Name="RecordingTab" Visibility="Collapsed">
+                <app:RecordingScreen x:Name="RecordingScreenInstance"/>
+            </TabItem>
+            <TabItem Name="RecordingCompletedTab" Visibility="Collapsed">
+                <app:RecordingCompletedScreen x:Name="RecordingCompletedScreenInstance"/>
+            </TabItem>
+            <TabItem Name="UserListTab" Visibility="Collapsed">
+                <app:UserListScreen x:Name="UserListScreenInstance"/>
+            </TabItem>
+            <TabItem Name="UserRecordingsTab" Visibility="Collapsed">
+                <app:UserRecordingsScreen x:Name="UserRecordingsScreenInstance"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="RecordingBooth.StartScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             Initialized="StartScreen_Initialized"
+             Loaded="StartScreen_Loaded" d:DesignHeight="575" d:DesignWidth="600">
+    <StackPanel Height="564" VerticalAlignment="Center">
+        <!-- Page title -->
+        <TextBlock Style="{StaticResource TitleText}" TextAlignment="Center" Height="84" VerticalAlignment="Center" UseLayoutRounding="False" Foreground="White">WELCOME TO<LineBreak/>RECORDING BOOTH</TextBlock>
+        
+        <!-- Optional descriptive text -->
+        <FlowDocumentScrollViewer Name="WelcomeTextViewer" VerticalScrollBarVisibility="Hidden" Visibility="Collapsed">
+            <FlowDocument FontFamily="Arial" FontSize="18" FontStyle="Italic">
+                <Paragraph>This is a description of the recording booth and why you might want to take advantage of it.</Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <Image Height="347" Name="image1" Stretch="Fill" Width="199" Source="/RecordingBooth;component/Images/start.png" ForceCursor="True" MouseDown="StartButton_Click" />
+        <!-- The "Start" button -->
+        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource GreenButtonStyle}" HorizontalAlignment="Center" Name="StartButton" VerticalAlignment="Center" Click="StartButton_Click" Margin="0,40,0,0" Visibility="Hidden">START</Button>
+    </StackPanel>
+</UserControl>

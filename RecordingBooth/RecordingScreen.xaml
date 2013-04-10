@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="RecordingBooth.RecordingScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             d:DesignHeight="600"
+             d:DesignWidth="900"
+             Initialized="RecordingScreen_Initialized">
+    <StackPanel VerticalAlignment="Center">
+        
+        <!-- Title -->
+        <TextBlock Style="{StaticResource TitleText}" TextAlignment="Center" Visibility="Hidden">THE STUDIO</TextBlock>
+        
+        <!-- The flashing red recording indicator -->
+        <Label Name="RecordingIndicator" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Ellipse Fill="Red" Height="20" Width="20"></Ellipse>
+                <Label Name="RecordingIndicatorText" Foreground="Red" FontWeight="Bold" Content="RECORDING">
+                    <Label.Triggers>
+                        <EventTrigger RoutedEvent="Ellipse.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation
+                                            Storyboard.TargetName="RecordingIndicatorText" 
+                                            Storyboard.TargetProperty="Opacity"
+                                            From="1.0" To="0.0" Duration="0:0:0.75" 
+                                            AutoReverse="True" RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Label.Triggers>
+                </Label>
+            </StackPanel>
+        </Label>
+        
+        <!-- Slider showing how much time is used/remains -->
+        <Slider Name="TimeSlider"
+                Template="{StaticResource HorizontalSlider}"
+                Height="40"
+                Width="640"
+                Minimum="0.0"
+                Maximum="1.0"
+                Value="{Binding RecordedTimeFraction}"/>
+        
+        <!-- Digital recording time display -->
+        <Label Name="TimeLabel"
+               HorizontalAlignment="Center"
+               FontFamily="Arial"
+               FontSize="20"
+               FontWeight="Bold"
+               Margin="0,10,0,0"
+               Content="{Binding RecordedTime}"/>
+        
+        <!-- Warning when less than 1 minute remains -->
+        <Label Name="TimeWarning"
+               Foreground="Red"
+               HorizontalAlignment="Center"
+               FontFamily="Arial"
+               FontSize="20"
+               FontWeight="Bold"
+               Margin="0,10,0,0"
+               Visibility="Hidden">Less than 1 minute remaining</Label>
+        
+        <!-- Recording level indicator -->
+        <ProgressBar Height="20" Width="300" Value="{Binding PeakSample}" Margin="0,0,0,0" Style="{StaticResource LevelIndicator}"></ProgressBar>
+
+        <!-- Button bar -->
+        <StackPanel Orientation="Horizontal" Margin="0,40,0,0" HorizontalAlignment="Center">
+            <Image Height="347" HorizontalAlignment="Left" Margin="7,17,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="199" Source="/RecordingBooth;component/Images/back.png" Grid.RowSpan="2"  MouseDown="BackButton_Click"  />
+            <Button Visibility="Collapsed" Style="{StaticResource RedButtonStyle}" Name="BackButton" Margin="0,0,0,0" Click="BackButton_Click">BACK</Button>
+            <Image Height="347" HorizontalAlignment="Left" Margin="7,17,0,0" Name="img_record" Stretch="Fill" VerticalAlignment="Top" Width="199" Source="/RecordingBooth;component/Images/start-recording.png" Grid.RowSpan="2"  MouseDown="StartButton_Click"  />
+            <Button Visibility="Collapsed" Style="{StaticResource DarkRedButtonStyle}" Name="StartButton" Margin="40,0,0,0" FontSize="28" Click="StartButton_Click">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center">START<LineBreak/>RECORDING</TextBlock>
+            </Button>
+            <Image Height="347" Visibility="Hidden" HorizontalAlignment="Left" Margin="7,17,0,0" Name="img_stoprecord" Stretch="Fill" VerticalAlignment="Top" Width="199" Source="/RecordingBooth;component/Images/stop-recording.png" Grid.RowSpan="2"  MouseDown="StopButton_Click"  />
+            <Button Visibility="Collapsed" Style="{StaticResource GreenButtonStyle}" Name="StopButton" Margin="40,0,0,0" FontSize="28" Click="StopButton_Click">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center">STOP<LineBreak/>RECORDING</TextBlock>
+            </Button>
+        </StackPanel>
+
+        </StackPanel>
+</UserControl>
