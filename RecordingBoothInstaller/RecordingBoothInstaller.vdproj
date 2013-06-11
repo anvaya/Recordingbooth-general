@@ -280,7 +280,7 @@
         "Entry"
         {
         "MsmKey" = "8:_9F7F11DA19311EF519F0CB635FFD077E"
-        "OwnerKey" = "8:_8C37ABC3085E65945BD2E3584EDDD02A"
+        "OwnerKey" = "8:_1A5A74131C994916829FA2776FB521D8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -292,7 +292,7 @@
         "Entry"
         {
         "MsmKey" = "8:_9F7F11DA19311EF519F0CB635FFD077E"
-        "OwnerKey" = "8:_1A5A74131C994916829FA2776FB521D8"
+        "OwnerKey" = "8:_8C37ABC3085E65945BD2E3584EDDD02A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -376,61 +376,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8C37ABC3085E65945BD2E3584EDDD02A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DC4A7170DF51373FC7F2BAC02E34174E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_13F520293EB9D7D534576A6011804618"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_21E148313EC45E7A1727CE082448C62F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0AA1923AC5B3CAEDA7DA042C4DA6847B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5F72A8C33FB101C8616C0A7F591D7C29"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AE15969075CD26749C29AAB6575592B9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1BCB4DAA9A3A73B13C3B1949C11F4E35"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_20D994FEF1AD6B45380A044F782D1F24"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9F7F11DA19311EF519F0CB635FFD077E"
+        "OwnerKey" = "8:_0595C502493211DE77D3804BF2844E09"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -442,7 +388,61 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0595C502493211DE77D3804BF2844E09"
+        "OwnerKey" = "8:_9F7F11DA19311EF519F0CB635FFD077E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_20D994FEF1AD6B45380A044F782D1F24"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1BCB4DAA9A3A73B13C3B1949C11F4E35"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_AE15969075CD26749C29AAB6575592B9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5F72A8C33FB101C8616C0A7F591D7C29"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0AA1923AC5B3CAEDA7DA042C4DA6847B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_21E148313EC45E7A1727CE082448C62F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_13F520293EB9D7D534576A6011804618"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_DC4A7170DF51373FC7F2BAC02E34174E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8C37ABC3085E65945BD2E3584EDDD02A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -607,11 +607,6 @@
             "AssemblyAsmDisplayName" = "8:System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0595C502493211DE77D3804BF2844E09"
-                    {
-                    "Name" = "8:System.Data.SqlServerCe.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Data.SqlServerCe.dll"
             "TargetName" = "8:"
@@ -638,11 +633,6 @@
             "AssemblyAsmDisplayName" = "8:InputSimulator, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0AA1923AC5B3CAEDA7DA042C4DA6847B"
-                    {
-                    "Name" = "8:InputSimulator.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:InputSimulator.dll"
             "TargetName" = "8:"
@@ -729,11 +719,6 @@
             "AssemblyAsmDisplayName" = "8:MixerNativeLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_13F520293EB9D7D534576A6011804618"
-                    {
-                    "Name" = "8:MixerNativeLibrary.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MixerNativeLibrary.dll"
             "TargetName" = "8:"
@@ -780,11 +765,6 @@
             "AssemblyAsmDisplayName" = "8:FPS.Shared, Version=1.1.1.0, Culture=neutral, PublicKeyToken=f8dd9d4723a288e1, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_1BCB4DAA9A3A73B13C3B1949C11F4E35"
-                    {
-                    "Name" = "8:FPS.Shared.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:FPS.Shared.dll"
             "TargetName" = "8:"
@@ -831,11 +811,6 @@
             "AssemblyAsmDisplayName" = "8:AudioRecorder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_20D994FEF1AD6B45380A044F782D1F24"
-                    {
-                    "Name" = "8:AudioRecorder.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AudioRecorder.dll"
             "TargetName" = "8:"
@@ -862,11 +837,6 @@
             "AssemblyAsmDisplayName" = "8:CoreAudioApi, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_21E148313EC45E7A1727CE082448C62F"
-                    {
-                    "Name" = "8:CoreAudioApi.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:CoreAudioApi.dll"
             "TargetName" = "8:"
@@ -893,11 +863,6 @@
             "AssemblyAsmDisplayName" = "8:NAudio, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_261408FED63ABFF44775D8FD8A39F080"
-                    {
-                    "Name" = "8:NAudio.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:NAudio.dll"
             "TargetName" = "8:"
@@ -1024,11 +989,6 @@
             "AssemblyAsmDisplayName" = "8:RecordingLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5F72A8C33FB101C8616C0A7F591D7C29"
-                    {
-                    "Name" = "8:RecordingLibrary.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:RecordingLibrary.dll"
             "TargetName" = "8:"
@@ -1215,11 +1175,6 @@
             "AssemblyAsmDisplayName" = "8:TouchKeyboard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_8C37ABC3085E65945BD2E3584EDDD02A"
-                    {
-                    "Name" = "8:TouchKeyboard.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:TouchKeyboard.dll"
             "TargetName" = "8:"
@@ -1406,11 +1361,6 @@
             "AssemblyAsmDisplayName" = "8:NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_9F7F11DA19311EF519F0CB635FFD077E"
-                    {
-                    "Name" = "8:NLog.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:NLog.dll"
             "TargetName" = "8:"
@@ -1477,11 +1427,6 @@
             "AssemblyAsmDisplayName" = "8:FPS.VirtualKeyboard, Version=3.2.3.0, Culture=neutral, PublicKeyToken=c2d2b15f7607898c, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_AE15969075CD26749C29AAB6575592B9"
-                    {
-                    "Name" = "8:FPS.VirtualKeyboard.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:FPS.VirtualKeyboard.dll"
             "TargetName" = "8:"
@@ -1568,11 +1513,6 @@
             "AssemblyAsmDisplayName" = "8:WindowsMicrophoneMuteLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_DC4A7170DF51373FC7F2BAC02E34174E"
-                    {
-                    "Name" = "8:WindowsMicrophoneMuteLibrary.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:WindowsMicrophoneMuteLibrary.dll"
             "TargetName" = "8:"
@@ -1790,14 +1730,14 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:"
+        "Manufacturer" = "8:Advanced Thinking Systems Pvt. Ltd."
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:Recording Booth Installer"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:"
+        "ARPCONTACT" = "8:Advanced Thinking Systems Pvt. Ltd."
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:Recording Booth Application"
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"

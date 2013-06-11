@@ -1,0 +1,12 @@
+﻿<Window x:Class="RecordingBooth.FlashWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="" Height="310" Width="571" AllowsTransparency="False" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="/RecordingBooth;component/Images/background-1_old.jpg" Stretch="None" TileMode="Tile" Viewport="0,0,1280,1024" ViewportUnits="Absolute" />
+    </Window.Background>
+    <Grid Height="266" Name="grid1" Width="545">
+        <Label Content="Copyright © 2013 Advanced Thinking System Ltd." Height="26" HorizontalAlignment="Left" Margin="12,248,0,0" Name="label1" VerticalAlignment="Top" Width="455" Foreground="White" />
+        <Label Content="Loading please wait...." Height="27" HorizontalAlignment="Left" Margin="290,171,0,0" Name="label2" VerticalAlignment="Top" Width="220" ClipToBounds="True" Foreground="White" />
+    </Grid>
+</Window>

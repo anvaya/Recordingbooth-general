@@ -113,6 +113,9 @@
     <Compile Include="ExitConfirmPopup.xaml.cs">
       <DependentUpon>ExitConfirmPopup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlashWindow.xaml.cs">
+      <DependentUpon>FlashWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FlowEditor.cs" />
     <Compile Include="FlowEditSubstitution.cs" />
     <Compile Include="FlowEditSubstitutionCollection.cs" />
@@ -170,6 +173,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FlashWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RecordingCompletedScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -206,6 +213,7 @@
     <Resource Include="Images\view-users_b.png" />
     <Resource Include="Images\playback-recording_b.png" />
     <Resource Include="Images\re-record-recording_b.png" />
+    <Resource Include="Images\background-1_old.jpg" />
     <Content Include="Resources\AdminBackgroundImage.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
